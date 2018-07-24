@@ -1,0 +1,61 @@
+body {
+  /* background-image: url("../profile/img/rough\ paper\ texture\ copy.jpg"); */
+  /* color: rgb(86, 119, 46); */
+  box-sizing: border-box;
+  min-height: 200vh;
+  position: absolute;
+}
+h1 {
+  font-family: "Michroma", sans-serif;
+  text-align: center;
+  font-size: 100px;
+  font-stretch: extra-expanded;
+  margin-bottom: 0;
+}
+h2 {
+  font-family: "Cabin Sketch", cursive;
+  font-variant-caps: petite-caps;
+  text-align: center;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+#welcome {
+  background-image: url("./img/welcome.jpg");
+  min-width: 100vw;
+  min-height: 20vh;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+#navigation {
+}
+#getFixed {
+  width: 100%;
+  height: 50px;
+  background: #aba39ab3;
+  display: none;
+  z-index: 999;
+}
+a {
+  color: #535455;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: all-petite-caps;
+}
+a:hover {
+  color: #928e8a;
+  font-size: 25px;
+}
+.picture {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background-color: yellow;
+}
+.about {background:  green;margin:  5px;}
