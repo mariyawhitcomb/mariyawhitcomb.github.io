@@ -7,17 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="stylesicons.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Michroma" rel="stylesheet">
     <title>Mariya Whitcomb</title>
 </head>
 
-<body>
+<body class="">
     <div id="welcome"></div>
     <nav class="" id="getFixed">
         <ul class="nav justify-content-around">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
             </li>
@@ -27,9 +32,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li> -->
         </ul>
     </nav>
 
@@ -54,26 +56,57 @@
         <h1>Projects</h1>
         <div class="projects">
             <div class=" project project1">
-                <p>Project 1</p>
 
+                <div class="inside">
+                    <a href="https://mariyawhitcomb.github.io/trivia-game/">
+                        <p>Project 1</p>
+                    </a>
+                </div>
             </div>
             <div class="project project2">
+                <div class="inside">
+                    <a href="https://nytimes-book-app.herokuapp.com/"></a>
+                    <p>Project 2</p>
+                </div>
 
-                <p>Project 2</p>
             </div>
             <div class="project project3">
+                <div class="inside">
+                    <a href="http://squalid-brass.surge.sh/"></a>
+                    <p>Project 3</p>
+                </div>
 
-                <p>Project 3</p>
             </div>
             <div class="project project4">
-
-                <p>Project 4</p>
+                <div class="inside">
+                    <p>T B D</p>
+                </div>
             </div>
-
         </div>
     </div>
     <div id="contact" class="container-fluid section">
         <h1>Contact me</h1>
+        <div class="contacts">
+            <h3> Thank you for stopping by! I would love to hear your feedback!</h3>
+            <h4>Please feel free to visit me on GitHub, LinkedIn or contact me By phone or email.</h4>
+
+        </div>
+        <div class="icons">
+            <a href="https://github.com/mariyawhitcomb">
+                <div data-icon="ei-sc-github" data-size="l" class="icon"></div>
+            </a>
+            <a href="mailto:mariyawhitcomb@gmail.com?Subject=Hello">
+                <div data-icon="ei-envelope" data-size="l" class="icon"></div>
+            </a>
+            <a href="https://www.linkedin.com/in/mariyawhitcomb/">
+                <div data-icon="ei-sc-linkedin" data-size="l" class="icon"></div>
+            </a>
+
+            <a rel="resume" href="./resume/ResumePortfolioPdf.pdf" target="_blank">
+                <div data-icon="ei-paperclip" data-size="l" class="icon"></div>
+            </a>
+        </div>
+
     </div>
 
 
@@ -86,6 +119,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js " integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em "
         crossorigin="anonymous "></script>
     <script src="script.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.js"></script>
+
 </body>
 
 </html>

@@ -8,7 +8,6 @@ h1 {
   text-align: center;
   font-size: 100px;
   font-stretch: extra-expanded;
-  /* margin: 60px; */
   color: #535556;
   font-variant: all-petite-caps;
 }
@@ -17,8 +16,11 @@ h2 {
   font-variant-caps: petite-caps;
   text-align: center;
 }
+h3,
+h4 {
+  text-align: center;
+}
 .row {
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -31,7 +33,7 @@ h2 {
   background-size: cover;
   background-position: center;
   height: 200px;
-  opacity:  0.7;
+  opacity: 0.7;
 }
 #navigation {
 }
@@ -64,9 +66,11 @@ a:hover {
 .projects {
   min-height: 40vh;
   display: flex;
-  justify-content: space-around;
-  /* align-items:  center; */
-  /* margin:  10px; */
+  justify-content: center;
+  align-items: center;
+  /* margin: 30px; */
+  width: 100vw;
+  flex-wrap: wrap;
 }
 
 .project {
@@ -74,25 +78,25 @@ a:hover {
   color: white;
   text-align: center;
   align-items: center;
-  /* Safari transitionend event.propertyName === flex */
-  /* Chrome + FF transitionend event.propertyName === flex-grow */
-  /* transition: font-size 0.6s cubic-bezier(0.61, -0.19, 0.7, -0.11),
-    flex 0.6s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s; */
-  flex: 1;
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
-  margin: 20px;
-  width: 200px;
-  height: 200px;
+  margin: 5px;
+  width: 35vw;
+  height: 30vh;
+  flex-wrap: wrap;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 .project1 {
-  background: grey;
+  background-image: url("./img/trivia.png");
 }
 .project2 {
-  background: grey;
+  background-image: url("./img/bookapp.png");
 }
 .project3 {
-  background: grey;
+  background-image: url("./img/diary.png");
 }
 .project4 {
   background: grey;
@@ -102,38 +106,147 @@ a:hover {
 .project > * {
   width: 100%;
   transition: transform 0.5s;
-  flex: 1 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* .project > *:first-child {
-  transform: translateY(-200%);
-}
-.project.open-active > *:first-child {
-  transform: translateY(0);
-}
-.project > *:last-child {
-  transform: translateY(200%);
-}
-.project.open-active > *:last-child {
-  transform: translateY(0);
-} */
-
 .project p {
   text-transform: uppercase;
   font-family: "Amatic SC", cursive;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
   font-size: 2em;
 }
-.project p:nth-child(2) {
-  font-size: 4em;
-}
 
-.project.open {
-  flex: 5;
-  font-size: 40px;
+.section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+blockquote {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #a5a4a4;
+  font-style: italic;
+  margin: 30px 60px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  width: 70vw;
+}
+.inside {
+  background: grey;
+  border: 10px solid;
+  position: relative;
+  width: 90%;
+  height: 80%;
+  transition: all 300ms ease;
+  opacity: 0;
+}
+.project:hover .inside {
+  opacity: 1;
+}
+.icon {
+  fill: #515556;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+h3,
+h4 {
+  font-variant: all-petite-caps;
+  display: flex;
+  justify-content: center;
+}
+/* @media only screen and (min-width: 768px) {
+  h1 {
+    font-family: "Michroma", sans-serif;
+    text-align: center;
+    font-size: 100px;
+    font-stretch: extra-expanded;
+    color: #535556;
+    font-variant: all-petite-caps;
+  }
+  h2 {
+    font-family: "Cabin Sketch", cursive;
+    font-variant-caps: petite-caps;
+    text-align: center;
+  }
+  h3,
+  h4 {
+    text-align: center;
+  }
+  .row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  #welcome {
+    background-image: url("./img/welcome.jpg");
+    min-width: 100vw;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    opacity: 0.7;
+  }
+  #navigation {
+  }
+  #getFixed {
+    width: 100%;
+    height: 50px;
+    background: #525556;
+    display: none;
+    z-index: 999;
+  }
+  a {
+    color: #eae1dd;
+    font-size: 20px;
+    font-weight: bold;
+    font-variant: all-petite-caps;
+  }
+  a:hover {
+    color: #ffece0;
+  }
+  .picture {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: yellow;
+  }
+  .about {
+    background: green;
+    margin: 5px;
+  }
+  .projects {
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 30px; 
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin: 5px;
+    width: 35vw;
+    height: 30vh;
+    flex-wrap: wrap;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
 }
 .section {
   min-height: 100vh;
@@ -147,11 +260,160 @@ blockquote {
   border-bottom: 1px solid #ccc;
   color: #a5a4a4;
   font-style: italic;
-  /* margin: 30px 60px; */
+  margin: 30px 60px;
   padding: 30px;
   text-align: center;
+  position: relative;
+  width: 70vw;
 }
-/* .flex-item {
+.inside {
+  background: grey;
+  border: 10px solid;
+  position: relative;
+  width: 90%;
+  height: 80%;
+  transition: all 300ms ease;
+  opacity: 0;
+}
+.project:hover .inside {
+  opacity: 1;
+}
+.icon {
+  fill: #515556;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+h3,
+h4 {
+  font-variant: all-petite-caps;
+  display: flex;
   justify-content: center;
-  flex-direction: column;
 } */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-family: "Cabin Sketch", cursive;
+    font-variant-caps: petite-caps;
+    text-align: center;
+  }
+  h3,
+  h4 {
+    text-align: center;
+  }
+  .row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  #welcome {
+    background-image: url("./img/welcome.jpg");
+    min-width: 100vw;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    opacity: 0.7;
+  }
+  #navigation {
+  }
+  #getFixed {
+    width: 100%;
+    height: 50px;
+    background: #525556;
+    display: none;
+    z-index: 999;
+  }
+  a {
+    color: #eae1dd;
+    font-size: 20px;
+    font-weight: bold;
+    font-variant: all-petite-caps;
+  }
+  a:hover {
+    color: #ffece0;
+  }
+  .picture {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: yellow;
+  }
+  .about {
+    background: green;
+    margin: 5px;
+  }
+  .projects {
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 30px; */
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin: 5px;
+    width: 35vw;
+    height: 30vh;
+    flex-wrap: wrap;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+.section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+blockquote {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #a5a4a4;
+  font-style: italic;
+  margin: 30px 60px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  width: 70vw;
+}
+.inside {
+  background: grey;
+  border: 10px solid;
+  position: relative;
+  width: 90%;
+  height: 80%;
+  transition: all 300ms ease;
+  opacity: 0;
+}
+.project:hover .inside {
+  opacity: 1;
+}
+.icon {
+  fill: #515556;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+h3,
+h4 {
+  font-variant: all-petite-caps;
+  display: flex;
+  justify-content: center;
+}
