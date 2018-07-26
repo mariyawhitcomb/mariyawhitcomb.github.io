@@ -301,6 +301,7 @@ h4 {
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 50px;
+    margin-bottom: 40px;
   }
   h2 {
     font-family: "Cabin Sketch", cursive;
@@ -310,6 +311,7 @@ h4 {
   h3,
   h4 {
     text-align: center;
+    font-size: 20px;
   }
   p {
     font-size: 15px;
@@ -382,7 +384,7 @@ h4 {
   }
   .icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 20px;
   }
   h3,
