@@ -12,9 +12,6 @@
 }
 .icon {
   position: relative;
-  display: inline-block;
-  /* width: 25px; */
-  /* height: 25px; */
   overflow: hidden;
 }
 .icon__cnt {
