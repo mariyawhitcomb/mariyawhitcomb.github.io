@@ -377,9 +377,9 @@ h4 {
     height: 100px;
     margin: 5px;
   }
-  .about {
-    background: green;
-    margin: 5px;
+
+  #about {
+    max-height: 200vh;
   }
   .projects {
     min-height: 40vh;
