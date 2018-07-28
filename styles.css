@@ -36,8 +36,7 @@ h4 {
   height: 200px;
   opacity: 0.7;
 }
-#navigation {
-}
+
 #getFixed {
   width: 100%;
   height: 50px;
@@ -67,11 +66,13 @@ a:hover {
 .projects {
   min-height: 40vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
   /* margin: 30px; */
   width: 100vw;
   flex-wrap: wrap;
+  /* max-height:  100vh; */
 }
 
 .project {
@@ -80,7 +81,6 @@ a:hover {
   text-align: center;
   align-items: center;
   justify-content: space-around;
-  display: flex;
   margin: 5px;
   width: 35vw;
   height: 30vh;
@@ -102,8 +102,13 @@ a:hover {
 }
 .project4 {
   background: grey;
+  opacity: 0;
 }
-
+.project-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 /* Flex Items */
 .project > * {
   width: 100%;
@@ -114,9 +119,8 @@ a:hover {
 }
 .project p {
   text-transform: uppercase;
-  font-family: "Amatic SC", cursive;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-  font-size: 2em;
+  text-align: justify;
+  line-height: 1;
 }
 
 .section {
@@ -125,6 +129,16 @@ a:hover {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+}
+#about {
+  max-height: 100vh;
+  justify-content: space-evenly;
+}
+img {
+  max-width: 15vw;
+  float: left;
+  margin-right: 15px;
+  opacity: 0.8;
 }
 blockquote {
   border-top: 1px solid #ccc;
@@ -139,14 +153,25 @@ blockquote {
   background: #fffffe91;
   border-radius: 20px;
 }
+p {
+  text-align: left;
+  padding: 10px;
+}
+.invisible {
+  opacity: 0;
+  min-height: 10vh;
+}
 .inside {
   background: grey;
   border: 10px solid;
   position: relative;
-  width: 90%;
-  height: 80%;
+  height: 100%;
+  width: 100%;
   transition: all 300ms ease;
-  opacity: 0;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .project:hover .inside {
   opacity: 1;
@@ -169,7 +194,10 @@ h4 {
   flex-wrap: nowrap;
   justify-content: space-around;
 }
-
+.inside a {
+  font-size: 20px;
+  line-height: 1px;
+}
 /* @media only screen and (min-width: 768px) {
   h1 {
     font-family: "Michroma", sans-serif;
