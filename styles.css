@@ -129,7 +129,7 @@ a:hover {
   align-items: center;
 }
 #about {
-  max-height: 100vh;
+  /* max-height: 100vh; */
   justify-content: space-evenly;
 }
 img {
@@ -199,6 +199,7 @@ h4 {
 h5 {
   text-align: center;
   width: 80vw;
+}
 /* @media only screen and (min-width: 768px) {
   h1 {
     font-family: "Michroma", sans-serif;
