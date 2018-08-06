@@ -129,7 +129,6 @@ a:hover {
   align-items: center;
 }
 #about {
-  /* max-height: 100vh; */
   justify-content: space-evenly;
 }
 img {
@@ -153,7 +152,7 @@ blockquote {
 }
 p {
   text-align: left;
-  padding: 10px;
+  text-indent: 5%;
 }
 .invisible {
   opacity: 0;
@@ -200,8 +199,7 @@ h5 {
   text-align: center;
   width: 80vw;
 }
-/* @media only screen and (min-width: 768px) {
-  h1 {
+h1 {
     font-family: "Michroma", sans-serif;
     text-align: center;
     font-size: 100px;
