@@ -12,7 +12,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="stylesicons.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Michroma" rel="stylesheet">
     <title>Mariya Whitcomb</title>
 </head>
@@ -20,19 +20,6 @@
 <body>
     <div id="welcome" class='top'>
         <h1>Hello :)</h1>
-        <nav class="" id="">
-            <ul class="nav links">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#project">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
     </div>
     <nav class="" id="getFixed">
         <ul class="nav links">
@@ -55,8 +42,8 @@
 
 
     <div id="about" class="container-fluid section">
-        <h1 class="flex-item">About me</h1>
-        <blockquote class="flex-item">
+        <h1 class="flex-item" data-aos="zoom-in">About me</h1>
+        <blockquote class="flex-item" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1500">
             <img src="./img/myphoto.jpg" alt="myPhoto">
 
             <p>Hi! My name is Mariya Whitcomb.
@@ -74,11 +61,11 @@
 
 
     <div id="project" class=" section">
-        <h1>Projects</h1>
+        <h1 data-aos="zoom-in">Projects</h1>
 
         <div class="projects">
 
-            <div class=" project project1">
+            <div class=" project project1" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
 
                 <div class="inside">
                     <p>A simple Trivia Game built with HTML, CSS and JavaScript</p>
@@ -92,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project project2">
+            <div class="project project2" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
                 <div class="inside">
                     <p>Using this NY Times book application user will be able to view best selling books and save them for later
                         reference.
@@ -109,7 +96,7 @@
                 </div>
 
             </div>
-            <div class="project project3">
+            <div class="project project3" data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="1500">
                 <div class="inside">
                     <p>Squad diary is a team project and it is created to allow students of GA to find support and encouragement.
                         <br> Built with MERN stack.</p>
@@ -144,24 +131,24 @@
             fully responsive in the nearest future. </h5>
     </div>
     <div id="contact" class="container-fluid section">
-        <h1>Contact me</h1>
-        <div class="contacts">
+        <h1 data-aos="zoom-in">Contact me</h1>
+        <div class="contacts" data-aos="zoom-out-up" data-aos-easing="linear" data-aos-duration="1500">
             <h3> Thank you for stopping by! I would love to hear your feedback!</h3>
             <h4>Please feel free to visit me on GitHub, LinkedIn or contact me By phone or email.</h4>
 
         </div>
         <div class="icons">
-            <a href="https://github.com/mariyawhitcomb" target="_blank">
+            <a href="https://github.com/mariyawhitcomb" target="_blank" data-aos="flip-left" data-aos-duration="1500" id='icon-1'>
                 <div data-icon="ei-sc-github" data-size="l" class="icon"></div>
             </a>
-            <a href="mailto:mariyawhitcomb@gmail.com?Subject=Hello">
+            <a href="mailto:mariyawhitcomb@gmail.com?Subject=Hello" data-aos="flip-left" data-aos-duration="1500" id='icon-2'>
                 <div data-icon="ei-envelope" data-size="l" class="icon"></div>
             </a>
-            <a href="https://www.linkedin.com/in/mariyawhitcomb/" target="_blank">
+            <a href="https://www.linkedin.com/in/mariyawhitcomb/" target="_blank" data-aos="flip-left" data-aos-duration="1500" id='icon-3'>
                 <div data-icon="ei-sc-linkedin" data-size="l" class="icon"></div>
             </a>
 
-            <a rel="resume" href="./resume/ResumePDF.pdf" target="_blank">
+            <a rel="resume" href="./resume/ResumePDF.pdf" target="_blank" data-aos="flip-left" data-aos-duration="1500" id='icon-4'>
                 <div data-icon="ei-paperclip" data-size="l" class="icon"></div>
             </a>
         </div>
@@ -179,6 +166,11 @@
         crossorigin="anonymous "></script>
     <script src="script.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
 </body>
 
