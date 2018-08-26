@@ -164,8 +164,8 @@ blockquote {
   border-radius: 20px;
 }
 p {
-  text-align: left;
-  text-indent: 5%;
+  text-align: justify;
+  /* text-indent: 5%; */
 }
 .invisible {
   opacity: 0;
@@ -269,71 +269,6 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-/* margin: 30px; 
-    width: 100vw;
-    flex-wrap: wrap;
-  }
-  
-  .project {
-    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
-    color: white;
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
-    margin: 5px;
-    width: 35vw;
-    height: 30vh;
-    flex-wrap: wrap;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-  }
-}
-.section {
-  min-height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-}
-blockquote {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  color: #a5a4a4;
-  font-style: italic;
-  margin: 30px 60px;
-  padding: 30px;
-  text-align: center;
-  position: relative;
-  width: 70vw;
-}
-.inside {
-  background: grey;
-  border: 10px solid;
-  position: relative;
-  width: 90%;
-  height: 80%;
-  transition: all 300ms ease;
-  opacity: 0;
-}
-.project:hover .inside {
-  opacity: 1;
-}
-.icon {
-  fill: #515556;
-}
-.icons {
-  display: flex;
-  justify-content: space-around;
-}
-h3,
-h4 {
-  font-variant: all-petite-caps;
-  display: flex;
-  justify-content: center;
-} */
 
 @media only screen and (max-width: 600px) {
   h1 {
