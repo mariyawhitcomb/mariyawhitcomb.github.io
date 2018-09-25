@@ -192,6 +192,7 @@ p {
 .icons {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom:  10px;
 }
 h3,
 h4 {
@@ -350,6 +351,7 @@ a:hover {
   }
   .section {
     min-height: 70vh;
+    margin-bottom:  20px;
   }
   blockquote {
     margin: 15px 30px;
@@ -363,20 +365,18 @@ a:hover {
     margin: 0px;
     padding: 1px;
   }
-  /* .project:hover .inside {
-    opacity: 1;
-  } */ /*
-  .icon {
+
+  /* .icon {
     fill: #515556;
     width: 20px;
     height: 20px;
   }
- 
+
   .icons {
     display: flex;
     justify-content: center;
-    /* width: 40px;
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     width: 80vw;
     height: 70px;
   } */
